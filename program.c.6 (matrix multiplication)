@@ -1,0 +1,53 @@
+printf("can't multiply matrices of these sizes\n");
+return 0;#include<stdio.h>
+int main()
+{
+int row,col,r,c,i,j,k,sum;
+printf("enter the size of first array\n");
+scanf("%d%d",&r,&c);
+int a[r][c];
+printf("enter the size of second array\n");
+scanf("%d%d",&row,&col);
+int b[row][col];
+if(c==row)
+{
+int m[r][col];
+printf("enter the elements in the first array\n");
+for(i=0;i<r;i++)
+ {
+  for(j=0;j<c;j++)
+   {
+    scanf("%d",&a[i][j]);
+   }
+ }
+printf("enter the elements in the second array\n");
+for(i=0;i<row;i++)
+   {
+    for(j=0;j<col;j++)
+     {
+      scanf("%d",&b[i][j]);
+     }
+   }
+for(i=0;i<r;i++)
+ { 
+  for(j=0;j<col;j++)
+   {
+   sum=0;
+   for(k=0;k<c;k++)
+    {
+    sum+=a[i][k]*b[k][j];
+    }
+   m[i][j]=sum;
+   }
+ }
+for(i=0;i<r;i++)
+ {
+  for(j=0;j<col;j++)
+  {
+   printf("%d",m[i][j]);
+  }
+  printf("\n");
+ }
+}
+else
+}
