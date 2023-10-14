@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+int i,j,row,col,sum=0;
+printf("enter the size of array\n");
+scanf("%d%d",&row&col);
+int a[row][col];
+printf("enter the elements in the array\n");
+for(i=1;i<=row;i++)
+{
+ for(j=1;j<=col;j++)
+ {
+  sum+=a[i][j];
+}
+}
+printf("sum=%d",sum);
+printf("average is=%f",(float)sum/(i*j));
+return 0;
+}
