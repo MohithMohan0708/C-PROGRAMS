@@ -1,0 +1,32 @@
+include <stdio.h>
+
+int main()
+{
+    int i,n,j,temp;
+    printf("enter the size of the array\n");
+    scanf("%#d",&n);
+    if(n>0)
+    {
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n-i;j++)
+        {
+            if(a[j]>a[j+1])
+            {
+               temp=a[j];
+               a[j]=a[j+1];
+               a[j+1]=temp;
+            }
+        }
+    }
+    printf("largest number=%d",a[n-1]);
+    }
+    else
+    printf("invalid input\n");
+    return 0;
+}
