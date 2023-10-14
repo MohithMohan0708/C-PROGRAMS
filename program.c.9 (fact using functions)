@@ -1,0 +1,20 @@
+
+#include<stdio.h>
+void factorial(int a);
+int main()
+{
+ int n;
+ printf("enter the number\n");
+ scanf("%d",&n);
+ factorial(n);
+ return 0;
+}
+void factorial(int a)
+{
+ int fact=1,i;
+ for(i=1;i<=n;i++)
+ {
+  fact+=fact*i;
+ }
+ printf(" factorial:%d",fact);
+};
