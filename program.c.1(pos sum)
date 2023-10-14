@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+int n,i;
+float k,sum=0,count=0;
+printf("enter the number of numbers\n");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+printf("enter %d th number\n",i);
+scanf("%f",&k);
+if(k>0)
+{
+sum+=k;
+count+=1;
+}
+else
+printf("%f",k);
+printf("%f\n",sum);
+printf("%f\n",sum/count);
+return 0;
+}
