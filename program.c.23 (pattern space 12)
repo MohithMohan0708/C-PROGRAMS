@@ -1,6 +1,6 @@
 #include<stdio.h>
-{
 int main()
+{
  int rows,cols,spaces,n;
   for(rows=1;rows<=n;rows++)
   {
